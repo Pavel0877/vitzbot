@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 # Загрузка контента из JSON
 def load_data(filename):
     try:
-        with open(f"data/{filename}", " "r", encoding="utf-8") as f:
+        with open(f"data/{filename}", "r", encoding="utf-8") as f:
             return json.load(f)
     except:
         return [f"[{filename}] файл не найден или ошибка чтения"]
